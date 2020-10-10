@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relazione Progetto "Car Versus Pacman"</title>
+  <style>
+  body {
+    font-size: 22px;
+  }
+  </style>
+</head>
+<body>
+
+<p>	
+  <B><Big><Big><Big><Big>Relazione Progetto  "Car Versus Pacman"</big></big></big></big></B>
+</p>
+
+<p>	
+  <B><Big><Big>Introduzione al progetto</big></big></B>
+</p>
+
+Il progetto che si vuole sviluppare per ll corso di Fondamenti di Computer Graphics M, è un'applicazione di tipo "automotive", 
+e in quanto tale, incentrato sulla realizzazione di diversi tipi di autovetture, contraddistinti da diverse caratteristiche grafiche e fisiche.
+Si tratta in particolare di una rivisitazione del celebre videogioco "Pacman", che vede però quest'ultimo come un'antagonista che si allea con i fantasmi
+per riuscire a rincorrere e mangiare il giocatore.
+Tutte le notifiche e i messaggi presenti sono in inglese, per consentire a chiunque di comprendere e apprezzare il gioco.
+<p>	
+  <B><Big><Big>Struttura del videogico</big></big></B>
+</p>
+Il videogioco prevede due scene principali, il menù di selezione della macchina e la partita vera e propria.
+<br><br>
+<img src="./Screenshots/Menu.jpg" width="600" height="430"/>
+<img src="./Screenshots/Partita2.jpg" width="600" height="430"/>
+<p>
+	<B>Menu:</B>
+</p>
+Non appena si avvia l'applicazione, si apre la schermata di selezione della propria automobile.
+E' sufficiente cliccare l'apposito tasto details per capire come muoversi all'interno del Menu e successivamente nella partita.
+La pressione del tasto infatti produce 4 messaggi che circondano la macchina che si sta visualizzando:
+<br>
+<img src="./Screenshots/MenuDetails.jpg" width="600" height="430"hspace="300"/>
+<br><br>1) Viene spiegato brevemente lo scopo del gioco: "Pacman e i fantasmi si sono alleati per mangiarti, scappa e ruba loro tutte le monete
+per vincere (W,A,S,D per muoverti)."  
+<br><br>2) I comandi sono pochi e semplici, W,A,S,D ( da notare che sono abilitate anche le frecce direzionali da tastiera, e gli appositi bottoni per chi gioca
+da cellulare e tablet): A e D ( ← , → ) per passare rispettivamente alla macchina precedente e sucessiva ; W (↑) 
+per confermare.
+<br><br>3) Vengono mostrate le caratteristiche fisiche della macchina in questione e la sua abilità speciale (ogni vettura ha una particolare <i>"skill"</i> da
+   utilizzare all'occorrenza, più o meno utile a seconda del livello).
+<br><br>4) Ogni auto può essere più o meno facile da utilizzare nel gioco, sia per le caratteristiche fisiche che per le abilità, dunque viene attribuito un
+   livello "Beginner", "Intermediate" e "Advanced" ad ogni vettura.
+<br><br>
+<img src="./Screenshots/Advanced.jpg" width="440" height="300"/>
+<img src="./Screenshots/Intermediate.jpg" width="440" height="300"/>
+<img src="./Screenshots/Beginner.jpg" width="440" height="300"/>
+
+<p>
+	<B>Partita:</B>
+</p>
+1) Non appena si sceglie la macchina, premendo l'apposito tasto W ( o ↑), inizia il vieogioco vero e proprio:
+Una telecamera dall'alto riprende la scena, mostrando la propria vettura (che parte dal basso), Pacman (che entra dall'apposito corridoio), i fantasmi ( che come di consueto vengono generati dal centro) e tutte le monete disseminate nel labirinto.
+<br><br>2) Premendo nuovamente Details è possibile visualizzare sulla sinistra come funziona nello specifico l'abilità della macchina scelta.
+<br><br>
+<img src="./Screenshots/SpecialSkill.jpg" width="600" height="430"hspace="300"/>
+<br><br>3) Cliccando una prima volta su "Change Camera", si cambia la visuale, quindi la telecamera segue la macchina come se fosse posizionata sul tettuccio.
+La terza e ultima Camera, cliccando un'ulteriore volta su "Change Camera",è puramente estetica e permette di visualizzare la vettura nella sua  
+interezza, seguendola da più lontano e senza ruotare insieme ad essa, per apprezzarne le carattetistiche fisiche e le mosse speciali. 
+Intuitivamente, per tornare alla prima visuale dall'alto e osservare dove si trovano i nemici, sarà sufficiente cliccare nuovamente su "Change camera".
+<br><br>4) Per vincere è necessario raccogliere tutte le monete presenti nella scena,  stando attenti a non cadere dal labirinto (salvo casi specifici, vedi 
+<i>"Particolarità-Skills-3"</i>) e a non essere mangiati da Pacman e dai fantasmi.
+
+
+
+<p>	
+  <B><Big><Big>Scenografia e scelte progettuali</big></big></B>
+</p>
+<p>
+	<B>Ambientazione:</B>
+</p>
+L'idea alla base della senografia scelta è quella di dare al giocatore l'impressione di trovarsi in una realtà surreale, come se venisse proiettato di colpo 
+nel mondo di Pacman e dovesse affrontarlo con una delle macchine in dotazione, per riuscire a tornare nel suo mondo, il pianeta terra.
+Non a caso parlo di pianeta, ho immaginato infatti che il mondo di pacman fosse una realtà ristretta ad una piattaforma fluttuante nello spazio, tra innumerevoli corpi celesti.
+
+<p>
+	<B>Piano d'appoggio:</B>
+</p>
+
+Il terreno inizialmente era composto da varie zolle in rilievo, tanti oggetti "sassi" con relativa texture, ma ciò causava un eccessivo
+	 rallenamento del gioco. Applicando invece la texture ad un piano, l'effetto visivo si è rivelato comunque accettabile e realistico, ma soprattutto privo di <i>"lag"</i>.
+<p>
+	<B>Muri:</B>
+</p>
+
+La stessa scelta è stata adottata per i muri che costituiscono il labirinto, caratterizati da una texture violacea.
+
+<p>
+	<B>Luna:</B>
+</p>
+Nella scena è presente una luna, unica fonte di luce (o per meglio dire, riflette la luce di un sole lontano) che illumina il labirinto, con le fattezze di Pacman e mappata con apposita texture .
+
+<p>
+	<B>Statua:</B>
+</p>
+L'ultimo elemento scenografico aggiunto al videogioco è una statua, posta all'interno di una recinzione e collocata al centro di quella che potrebbe essere una "piazza" nella piattaforma di Pacman.
+<br><br>
+<img src="./Screenshots/Scenografia.jpg" width="600" height="430"/>
+<img src="./Screenshots/Scenografia2.jpg" width="600" height="430"/>
+
+<p>	
+  <B><Big><Big>Particolarità e scelte progettuali</big></big></B>
+</p>
+<p>
+	<B>Movimento dei personaggi:</B>
+</p>
+Per fare in modo che pacman e i fantasmi si muovessero in maniera casuale all'interno del labirinto, sono state sviluppate una serie di funzioni che ne calcolassero di volta in volta la direzione. In particolare è stato necessario calcolare una serie di limiti sulla piattaforma, in corrispondenza dei vari muri, di modo che al contatto con essi, si calcolasse una nuova direzione (tenendo conto della direzione precedente). Se ad esempio ad esempio Pacman proviene da sinistra verso destra e incontra un ostacolo, la sua prossima mossa sarà una direzione casuale tra sopra e sotto (NB: provando varie modalità di gioco, si è scelto di non dargli la facoltà di tornare indietro, in questo caso, da destra verso sinistra, onde evitare che percorra lunghi tracciati avanti e indietro più volte).
+Per scelta puramente soggettiva, Pacman (antagonista numero uno), risulta leggermente più grosso e più veloce rispetto ai fantasmi.
+<p>
+	<B>Urti:</B>
+</p>
+I limiti già calcolati per i muri, sono risultati fondamentali anche per la gestione degli urti della macchina contro di essi.
+	 Applicando delle rototraslazioni, è stato possibile calcolare 4 punti di controllo (appositamente posti ai 4 angoli della vettura) in modo da valutare se uno di questi si trovasse in corrispondenza di un muro. In tal caso, ovvero in caso di incidente, la macchina viene spinta, per la durata di qualche frame, in direzione opposta, simulando un rimbalzo contro l'ostacolo.
+<br><br>
+<img src="./Screenshots/Urto1.jpg" width="440" height="300"/>
+<img src="./Screenshots/Urto2.jpg" width="440" height="300"/>
+<img src="./Screenshots/Urto3.jpg" width="440" height="300"/>
+
+<p>
+	<B>Controllo dei limiti esterni alla piattaforma:</B>
+</p>
+I limiti relativi alla dimensione del terreno di gioco, non sono stati inseriti tra quelli dei muri intenzionalmente, per motivi legati alle abilità delle macchine. In generale, per verificare se una macchina  non è caduta nello spazio, o se una macchina ha raccolto una moneta, o se una macchina è stata mangiata da un personaggio, viene semplicemente controllata la sua posizione px,pz (che coincide col centro di massa per ogni auto) e non i suoi 4 punti di controllo.
+	 Anche quest'ultima scelta è puramente soggettiva, si è deciso infatti di considerare una macchina ancora in campo, se fuoriesce solo con le estremità,
+	 e di considerarla salva se sfiora appena un nemico.
+<p>
+	<B>Skills:</B>
+</p>
+Si è deciso di dotare ogni macchina di una abilità particolare. 
+<br>1) La prima, la Bugatti, a mio parere risulta la più difficile da gestire ma anche la più divertente (motivo per cui è livello "Advanced"). La sua abilità "Drift King", le permette appunto di iniziare a derapare se si tiene premuto per qualche istante A o D ( ← , → ), mentre si accellera o si va a marcia indietro; il rilascio di A o D ( ← , → ), disabilita l'abilità all'istante, consentendo all'auto di cessare di sbandare. 
+<br>2) La seconda, la FastCar, risulta un po' più  facile da utilizzare (livello "Intermediate"), grazie ad un grip maggiore e un cambio di direzione più rapido (è necessario comunque farci un po' la mano). La sua abilità "360 Bornout" le permette appunto di iniziare a fare dei testacoda tenendo premuto per qualche istante A o D ( ← , → ), mentre si accellera o si va a marcia indietro; ancora una volta, il rilascio di A o D ( ← , → ), disabilita l'abilità all'istante, ripristinando le funzioni iniziali.
+<br>3) La terza, la FlyCar, è senza dubbio la più facile da utilizzare (livello "Beginner"), sia per i parametri fisici che per la sua speciale abilità "Shuttle Thrusters". Per questa vettura, non c'è bisogno di premere alcun tasto per l'attivazione della skill, le basterà infatti oltrepassare i limiti della piattaforma (per tale motivo il limite della piattaforma e i limiti dei muri sono separati) e iniziare a volare nello spazio. Si tratta sicuramente della skill più utile poichè toglie un limite alla vettura, le consente di fuggire per qualche istante nello spazio in caso di pericolo, e le permette inoltre di aggirare il labirinto dall'esterno per poi rientrare da un altro accesso più gradito.
+
+<p>
+	<B>Gestione Input PC/Cellulare:</B>
+</p>
+La gestione degli input da testiera (sul PC, WASD o ←↑→↓) è differente rispetto a quella di un click sui bottoni WASD (sul cellulare).
+ Questo perchè tramite cellulare ad esempio, con una gestione analoga degli input, sarebbe necessario premere ripetutamente su un qualunque bottone (e solo singolarmente) per muoversi in qualsiasi direzione (per andare avanti sarebbe necessario cliccare ripetutamente su W, per sterzare a destra su D, senza nemmeno poter andare avanti e sterzare insieme). Dunque ho ritenuto più opportuna una gestione di questo tipo: Cliccando un unica volta su W (da cellulare)
+ la macchina inizia ad accellerare, viceversa cliccando su S inizia ad andare a marcia indietro. Per sterzare a destra sarà sufficiente cliccare su D (e la macchina si muoverà in avanti o indietro in base all'ultimo comando W o S impartito), viceversa per cambiare direzione e sterzare a sinistra, su A.
+
+<p>
+	<B>Telecamere:</B>
+</p>
+Sono state inserite nel videogioco 3 diverse telecamere, ognuna con uno scopo ben preciso.
+La prima, nonchè quella con cui si inizia a giocare, riprende la scena dall'alto ed è stata pensata per consentire al giocatore di vedere, con un rapido click, dove si trovano i nemici in modo da sfuggirgli più facilmente.
+La seconda, che riprende la scena dal tettuccio dell'automobile, dovrebbe essere invece la visuale da mantenere per la maggiorparte del tempo, per addentrarsi nel labirinto in prima persona rendendo il gioco più avvincente.
+La terza in fine, ha il solo scopo di mostrare da vicino i vari dettagli grafici e scenografici della macchina stessa, dei personaggi e dell'ambiente circostante.  
+<br><br>
+<img src="./Screenshots/Camera1.jpg" width="440" height="300"/>
+<img src="./Screenshots/Camera2.jpg" width="440" height="300"/>
+<img src="./Screenshots/Camera3.jpg" width="440" height="300"/>
+
+<p>
+	<B>Foto dell'autore:</B>
+</p>
+Nelle fasi preliminari di progetto si era pensato di mettere un'unica moneta nel gioco, che se catturata consentiva di vincere la partita.
+Si era deciso di metterne solo una con sovrapposta la mia foto (per soddisfare le specifiche di progetto) anche per timore che il gioco si sovraccaricasse troppo.
+Giocando successivamente nelle fasi finali, potendolo fare, ho cambiato idea disseminando nel labirinto la bellezza di 81 monete, per rendere la partita più difficile, lunga e avvincente.
+ <br><br>
+ <img src="./Screenshots/Foto.jpg" width="600" height="430"hspace="300"/>
+<p>
+	<B>Statua dell'autore:</B>
+</p>
+L'ultima particolarità inserita nel progetto (scelta parecchio discutibile), è una statua dorata raffigurante l'autore del progetto (qualora non fosse abbastanza chiaro grazie alle 81 monete con foto annessa).
+ Più che mania di protagonismo, è stata una sfida personale: riuscire a mettere in un videogioco un modello 3D con le mie fattezze (fisico a parte).
+ Per fare ciò ho scattato la bellezza di 69 foto del mio viso a 360°, tutte da angolazioni diverse, e grazie al software "Colmap", ho ricostruito il modello 3D della mia faccia. Il corpo e il cancello sono stati semplicemente scaricati da internet, modificati, rielaborati e sovrapposti; La colonna d'appoggio, con targetta annessa è stata creata da zero su Blender e <i>"texturizzata"</i> simulando il marmo.  
+ <br><br>
+ <img src="./Screenshots/Statua.jpg" width="600" height="430"hspace="300"/>
+
+<p>	
+  <B><Big><Big>Fasi progettuali che hanno richiesto più tempo</big></big></B>
+</p>
+<p>
+	<B>Lettura e rendering degli oggetti:</B>
+</p>
+
+	 Il primo grosso ostacolo è stato quello di riuscire ad importare nella scena oggetti complessi, caratterizzati da più materiali ed eventuali texture.
+	 Per riuscire ad ottenere un risultato soddisfacente dal punto di vista grafico, ho preso spunto dal sito WebGl Fundamentals, più volte citato durante 
+	 il corso. Sebbene le funzioni per la lettura dei file .obj e .mtl, funzionassero già egregiamente (e dunque le ho praticamente utilizzate così com'erano), 
+	 ho impiegato diversi giorni per riuscire ad utilizzare tali informazioni e capire come fossero strutturate.
+	 Sul sito infatti, è già presente un esempio per leggere un oggetto, caricare le relative informazioni in memoria e renderizzarlo, tuttavia fa uso di funzioni che non ci è concesso utilizzare (in particolare della libreria twgl), e permette di visualizzare appunto un unico oggetto.
+	 Dunque è stato necessario capire bene come fossero strutturate le informazioni relative all'oggetto e ai materiali, analizzare cosa facessero le funzioni
+	 della libreria twgl (in alcuni casi erano presenti funzioni analoge in WebGlUtils) per poi sostituirle con altre operazioni, e soprattutto
+	 spezzare e rialaborare l'intero codice per poter leggere e caricare nella scena più oggetti.
+	 A tal scopo quindi è stata implementata una nuova funzione loadObject per leggere e caricare uno ad uno in un array gli oggetti della scena (prima di iniziare rendering) ed una funzione drawObject (da chiamare in fase di rendering) per disegnare tutti gli oggetti desiderati a partire dalle informazioni precaricate.
+
+<p>
+	<B>Modellazione 3D tramite Blender:</B>
+</p>
+Sicuramente un'altra grossa fetta di tempo l'ho trascorsa su Blender, sia per comprenderne i comandi e le funzioni base (non avendolo mai utilizzato) che per usarlo concretamente. Tutti gli oggetti importati nel videogioco, infatti, sono stati sì scaricati da internet, ma modificati, ridimensionati, colorati, <i>"texturizzati"</i> e semplificati (per velocizzare il rendering) uno ad uno. 
+<br>//</br>
+	 Per fare un esempio, la vettura rossa "fastcar", inizialmente era un oggetto bianco, inserito in un parcheggio, caratterizzata da una mesh piuttosto complessa con faccette e vertici fuoriposto. Per prima cosa è stata isolata la vettura, eliminando tutto il background, poi son state rimosse tutte le parti interne non visibili (inutili per il videogioco e che lo rallentavano solamente), dopodichè è stato applicato un opportuno smoothing sulle singole parti della macchina (sempre per semplifirare la mesh complessiva e quindi velocizzare il rendering), poi è stato applicato un materiale per ogni componente, sono stati aggiunti/migliorati loghi sulla macchina e sulle ruote (NB:ruota anteriore diversa da quella posteriore) e infine aggiunte delle scanalature, modificato il motore e le pastiglie dei freni per abbellirla.
+     Un esempio di un oggetto <i>"texturizzato"</i> è invece la luna, una sfera con le fattezze di pacman, su cui è stato applicato un UV mapping (sempre tramite blender)per mappare le coordinate uv di una immagine rappresentante i crateri lunari, su di una sfera tridimensionale. 
+<br>//</br>
+	 Blender è stato poi utile anche per calcolare e settare i baricentri dei vari oggetti, e per verificare le loro effettive dimensioni (particolarmente utile per impostare i limiti sui muri del labirinto).
+
+<p>
+	<B>Calcolo dei punti di controllo e limiti:</B>
+</p>
+
+ 
+	 Diversi giorni li ho impiegati per pensare a un modo efficacie ed ottimizzato per far muovere i vari oggetti (personaggi e macchine) all'interno della scena.
+	 Per prima cosa ho deciso di impostare un array di coordinate per salvare in memoria tutte le posizioni dei muri ( e anche delle monete), sfruttando Blender.
+	 Dopodichè ho sviluppato una serie di funzioni che tenessero conto di questi limiti, per far muovere in maniera casuale e sensata pacman e i fantasmi (come già accennato). Per quanto riguarda la macchina invece, ho deciso di calcolare 4 punti di controllo, posti ai 4 angoli della carrozzeria, (applicando delle matrici di rototraslazione alla posizione corrente dell'auto) tenendo sempre in considerazione la loro posizione rispetto ai limiti del labirinto.
+	 In fine, per simulare un urto contro le pareti, ho stabilito un "timeCrash", nel corso del quale la macchina rimbalza con una spinta di accellerazione e direzione uguali ma contrarie fino ad arrestarsi.
+<p>
+	<B>Scelte stilistiche e risoluzione bug:</B>
+</p>
+Chiaramente un'altra buona parte di tempo, l'ho impiegata per lo sviluppo del pannello di controllo (font, colori, collocazione dei tasti, notifiche, 
+	 layout dei bottoni..), la scelta dei background con modifica/ridimensionamento delle gif annesse, e degli scenari di vittoria e sconfitta.
+	 Questi utiltimi, in particolare, consistono in una breve gif che raffigura pacman con l'intento di scappare o mangiarci, seguita dalla schermata "Congrats you win!" o "Game Over".
+	 Forse è inutile sottolineare che i bug da risolvere di volta in volta non sono stati pochi, sia per la gestione dei vari eventi/ input con cambio di scena,
+	 che per 
+
+<br><br>
+<img src="./Screenshots/Win.jpg" width="600" height="430"/>
+<img src="./Screenshots/GameOver.jpg" width="600" height="430"/>
+
+<p>	
+  <B><Big><Big>Conclusioni</big></big></B>
+</p>
+Gli esercizi e le prove svolte durante le lezioni sono stati fondamentali e mi hanno semplificato molto il lavoro durante la fase di progettazione.
+	Sebbene lo sviluppo del videogioco finora descritto abbia richiesto più tempo di quel che mi aspettassi, mi ci sono dedicato con passione e mi ritengo tutto sommato soddifatto del lavoro svolto.
+
+</body>
+</html>
