@@ -1,6 +1,6 @@
 # CarVsPacman_WebGl
 
-Progetto individuale di Fondamenti di Compter Graphics A.A.2019/20 assegnato il 22/04/2020
+Progetto individuale di Fondamenti di Computer Graphics A.A.2019/20.
 
 -Obiettivo:
 
