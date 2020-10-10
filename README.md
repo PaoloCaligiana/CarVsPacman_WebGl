@@ -1,5 +1,20 @@
 # CarVsPacman_WebGl
 
+-Verifica che il tuo Browser supporti WebGl2:
+https://get.webgl.org/webgl2/
+
+-Avvia il Server, quindi accedi alla certella del progetto scaricato e lancia da linea di comando:
+python -m http.server 8000
+
+-Sul Browser digita:
+localhost:8000
+
+e apri il file html carVSpacman.html (Caligiana/project/carVSpacman.html)
+
+
+
+
+-----------------------------------------------------------------------
 Progetto individuale di Fondamenti di Computer Graphics A.A.2019/20.
 
 -Obiettivo:
