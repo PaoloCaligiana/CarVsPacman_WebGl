@@ -48,6 +48,7 @@ Per il progetto si stimano necessarie almeno 40 ore di lavoro.
 -Avvertenza 1:
 
 Non e' vietato "guardare" codice esistente, anzi si caldeggia di farlo, ma per imparare e non per plagiare! Se trovate qualcosa di carino che funziona, ma non capite perche', non lo usate; vi potrebbe essere chiesto di spiegarlo.
+
 -Avvertenza 2:
 
 Non si possono usare librerie aggiuntive fatta eccezione per jQuery.ajax per caricamento e salvataggio di file locali, pena la non accettazione del progetto; si puo' invece riutilizzare tutto quello che e' stato messo a disposizione (per esempio la libreria glm_ligth.js per il caricamento di file .obj, webgl-utils.js, m4.js, ecc.).
